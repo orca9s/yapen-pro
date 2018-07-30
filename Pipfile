@@ -6,9 +6,13 @@ name = "pypi"
 [packages]
 django = "*"
 uwsgi = "*"
+django-storages = "*"
+"psycopg2-binary" = "*"
+pillow = "*"
 
 [dev-packages]
 awsebcli = "*"
+django-extensions = "*"
 
 [requires]
 python_version = "3.6"
