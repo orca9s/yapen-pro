@@ -9,10 +9,12 @@ uwsgi = "*"
 django-storages = "*"
 "psycopg2-binary" = "*"
 pillow = "*"
+"boto3" = "*"
 
 [dev-packages]
 awsebcli = "*"
 django-extensions = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.6"

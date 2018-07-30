@@ -34,7 +34,7 @@ AWS_S3_SIGNATURE_VERSION = secrets['AWS_S3_SIGNATURE_VERSION']
 
 # Auth
 ADMIN_USERNAME = 'jsm'
-ADMIN_PASSWORD = 'pbkdf2_sha256$100000$yezZOHABGmUb$sOiO/yFbVPJY3rPntMxxSxFrkYtD//RJ74SFU4GA2H8='
+ADMIN_PASSWORD = 'pbkdf2_sha256$100000$qugHnwNhSYCT$sQlG85+USXCa8yyMkMexb38YkXHrfuJuZTZAqh3g6lA='
 AUTH_USER_MODEL = 'members.User'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
