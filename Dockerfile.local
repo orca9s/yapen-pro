@@ -1,0 +1,10 @@
+FROM                yapen-docker:base
+MAINTAINER          orca9sg@gmail.com
+
+ENV                 BUILD_MODE              local
+ENV                 DJANGO_SETTINGS_MODULE  config.settings.${BUILD_MODE}
+
+COPY                .   /srv/project
+
+WORKDIR             /srv/project/app
+CMD                 python manage.py runserver 0:8000
