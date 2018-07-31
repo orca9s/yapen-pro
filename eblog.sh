@@ -16,7 +16,7 @@ eb ssh ${EB_ENV##* } -c "sudo docker cp ${EB_DOCKER_ID:0:4}:/var/log/django/erro
 
 # get log file from EC2 instance
 mkdir ./.log
-scp -i ~/.ssh/orca9sg-dev.pem -r ec2-user@13.125.227.169:/home/ec2-user/error.log ./.log/error.log
+scp -i ~/.ssh/orca9sg-dev.pem -r ec2-user@52.78.212.76:/home/ec2-user/error.log ./.log/error.log
 
 # delete log file in EC2
 eb ssh ${EB_ENV##* } -c "rm -rf error.log"
